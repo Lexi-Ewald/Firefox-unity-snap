@@ -522,7 +522,7 @@ parts:
 
   distribution:
     plugin: nil
-    source: https://github.com/mozilla-partners/canonical.git
+    source: https://github.com/Lexi-Ewald/ubuntu-unity.git
     override-prime: |
       mkdir -p $CRAFT_PRIME/usr/lib/firefox
       cp -R $CRAFT_PART_SRC/desktop/ubuntu/distribution $CRAFT_PRIME/usr/lib/firefox/
