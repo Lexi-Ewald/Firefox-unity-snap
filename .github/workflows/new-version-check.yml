@@ -16,8 +16,8 @@ name: New version check
 
 on:
   schedule:
-    # run every hour (at minute 35)
-    - cron: '35 * * * *'
+    # run every hour (at minute 58)
+    - cron: '58 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
             git config user.name "GitHub Actions"
             git config user.email "actions@github.com"
             git commit -m "Bump version to the latest release candidate (${{ env.new_version }})."
-            git push
+            git push stable
           else
             echo "New major version (${{ env.new_version }}), please merge the beta branch into the stable one."
           fi
